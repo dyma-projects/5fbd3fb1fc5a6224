@@ -7,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Exercice1Component implements OnInit {
   public compteur: number = 0; 
+  public result : number = this.compteur;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  public editResult(num : number) : void{
+    this.result +=num;
   }
 
 }
